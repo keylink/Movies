@@ -1,0 +1,37 @@
+<div class="container" ng-controller="ViewMovie" data-ng-init="init()">
+
+    <div class="row main__block">
+        <div class="col-md-12 search__wrap">
+            <h2>{{data.Title}}</h2>
+        </div>
+        <div class="col-md-8">
+            <p>{{data.Plot}}</p>
+            <p><b>Awards : </b>{{data.Awards}}</p>
+            <p><b>Actors : </b>{{data.Actors}}</p>
+            <p><b>BoxOffice : </b>{{data.BoxOffice}}</p>
+            <p><b>Production : </b>{{data.Production}}</p>
+            <p><b>Genre : </b>{{data.Genre}}</p>
+            <p><b>Runtime : </b>{{data.Runtime}}</p>
+            <p><b>Released : </b>{{data.Released}}</p>
+            <p><b>imdbRating : </b>{{data.imdbRating}}</p>
+
+            <p><b>Country : </b>{{data.Country}}</p>
+            <p><b>DVD : </b>{{data.DVD}}</p>
+            <p><b>Director : </b>{{data.Director}}</p>
+            <p><b>Language : </b>{{data.Language}}</p>
+
+            <p><b>Metascore : </b>{{data.Metascore}}</p>
+            <p><b>Rated : </b>{{data.Rated}}</p>
+            <p><b>Website : </b><a href="{{data.Website}}">{{data.Website}}</a></p>
+            <p><b>Writer : </b>{{data.Writer}}</p>
+            <p><b>imdbVotes : </b>{{data.imdbVotes}}</p>
+            <div class="buttons">
+                <a class="youtube__btn" href="#/home">Back</a>
+                <a class="left__btn youtube__btn" href="{{'https://www.youtube.com/results?search_query=' + data.Title}}">Watch the trailer</a>
+            </div>
+        </div>
+        <div class="col-md-4 text__align">
+            <img ng-if=data ng-src="{{data.Poster}}" alt="image">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>AngularJS Routing</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div ng-app="movieApp" >
+    <div class="top__nav">
+        <div class="container">
+            <nav>
+                <form class="form-inline mt-2 mt-md-0 float-right">
+                    <span class="text__top">Wants updates? Register now! Don't miss anything!</span>
+                    <input class="custom__input" type="text" placeholder="Your name" aria-label="Search">
+                    <input class="custom__input" type="text" placeholder="Your email*" aria-label="Search">
+                    <button class="subscribe__btn">Subscribe</button>
+                </form>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills float-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/viewMovie">View movie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Movies</h3>
+        </div>
+    </div>
+
+    <ng-view></ng-view>
+
+    <div class="container">
+        <footer class="footer">
+            <p> &copy; AngularJs 2018 жылы жасалган, суроо болсо жазгыла! </p>
+        </footer>
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="services/http.js"></script>
+<script type="text/javascript" src="controllers/movie-controller.js"></script>
+<script type="text/javascript" src="controllers/single-controller.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+body {
+    background: url("../img/patterns.jpg");
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 20px;
+}
+
+b {
+    color: #808080;
+}
+
+.top__nav {
+    overflow: hidden;
+    background: #D2691E;
+    padding: 5px 0;
+}
+
+.custom__input {
+    border-radius: 1px;
+    border: none;
+    padding-left: 5px;
+    margin-right: 10px;
+}
+
+.subscribe__btn {
+    border: none;
+    background: #d3d3d3;
+    cursor: pointer;
+}
+
+.text__top {
+    margin-right: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 2px;
+}
+
+.header {
+    padding: 4% 0;
+}
+
+.header .text-muted, .nav-link {
+    color: #d3d3d3 !important;
+}
+
+.nav-link:hover {
+    opacity: .5;
+    color: inherit;
+}
+
+.main__block {
+    color: #fff;
+}
+
+.search__wrap {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.tech__wrap {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.input__search {
+    border-radius: 5px;
+    border: none;
+    padding: 9px 10px;
+    width: 50%;
+}
+
+.search__btn {
+    border-radius: 5px;
+    border: none;
+    padding: 9px 20px;
+}
+
+.buttons {
+    margin-top: 7%;
+}
+
+.left__btn {
+    margin-right: 3%;
+}
+
+.youtube__btn {
+    padding: 10px 7%;
+    border: 1px solid #d3d3d3;
+    border-radius: 30px;
+    color: #d3d3d3;
+}
+
+.youtube__btn:hover {
+    text-decoration: none;
+    opacity: .5;
+    color: inherit;
+}
+
+.text__align {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    margin-top: 7%;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 5%;
+    color: #d3d3d3;
+}
+
+
+.carousel {
+    width: 60%;
+    height: 700px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie__poster {
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    flex-wrap: wrap;
+}

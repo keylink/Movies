@@ -1,0 +1,71 @@
+
+<div class="container" ng-controller="MovieController" data-ng-init="init()">
+
+    <div class="row main__block">
+        <div class="col-md-12 search__wrap">
+            <h2> Welcome to search movie app! </h2>
+            <input class="input__search" type="text" ng-model="searchName" placeholder="Type Movie Name" ng-keypress="myFunct($event)">
+            <button class="search__btn" ng-click="search()">Search</button>
+        </div>
+        <div class="col-md-8">
+            <h2>{{data.Title}}</h2>
+            <p>{{data.Plot}}</p>
+            <p><b>Awards : </b>{{data.Awards}}</p>
+            <p><b>Actors : </b>{{data.Actors}}</p>
+            <p><b>BoxOffice : </b>{{data.BoxOffice}}</p>
+            <p><b>Production : </b>{{data.Production}}</p>
+            <p><b>Genre : </b>{{data.Genre}}</p>
+            <p><b>Runtime : </b>{{data.Runtime}}</p>
+            <p><b>Released : </b>{{data.Released}}</p>
+            <p><b>imdbRating : </b>{{data.imdbRating}}</p>
+            <div class="buttons">
+                <a class="left__btn youtube__btn" href="{{'https://www.youtube.com/results?search_query=' + data.Title}}">Watch the trailer</a>
+                <a class="youtube__btn" href="#/viewMovie">Show more</a>
+            </div>
+        </div>
+        <div class="col-md-4 text__align">
+            <img ng-if=data ng-src="{{data.Poster}}" alt="image">
+        </div>
+    </div>
+
+
+    <div class="row info">
+        <div class="col-md-12 tech__wrap">
+            <h2>More Movie!</h2>
+        </div>
+        <div class="col-lg-8 movie__poster">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_SX300.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0MjA1OTMxOV5BMl5BanBnXkFtZTgwMzM1NDcyNDM@._V1_SX300.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <h4>Subheading</h4>
+            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+            <h4>Subheading</h4>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+            <h4>Subheading</h4>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+    </div>
+
+
+</div> <!-- /container -->
