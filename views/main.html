@@ -9,15 +9,34 @@
         </div>
         <div class="col-md-8">
             <h2>{{data.Title}}</h2>
-            <p>{{data.Plot}}</p>
-            <p><b>Awards : </b>{{data.Awards}}</p>
-            <p><b>Actors : </b>{{data.Actors}}</p>
-            <p><b>BoxOffice : </b>{{data.BoxOffice}}</p>
-            <p><b>Production : </b>{{data.Production}}</p>
-            <p><b>Genre : </b>{{data.Genre}}</p>
-            <p><b>Runtime : </b>{{data.Runtime}}</p>
-            <p><b>Released : </b>{{data.Released}}</p>
-            <p><b>imdbRating : </b>{{data.imdbRating}}</p>
+            <div class="movie__body">
+                <p>{{data.Plot}}</p>
+                <p>
+                    <b>Awards : </b> {{data.Awards}}
+                </p>
+                <p>
+                    <b>Actors : </b> {{data.Actors}}
+                </p>
+                <p>
+                    <b>BoxOffice : </b> {{data.BoxOffice}}
+                </p>
+                <p>
+                    <b>Production : </b> {{data.Production}}
+                </p>
+                <p>
+                    <b>Genre : </b> {{data.Genre}}
+                </p>
+                <p>
+                    <b>Runtime : </b> {{data.Runtime}}
+                </p>
+                <p>
+                    <b>Released : </b> {{data.Released}}
+                </p>
+                <p>
+                    <b>imdbRating : </b> {{data.imdbRating}}
+                </p>
+            </div>
+
             <div class="buttons">
                 <a class="left__btn youtube__btn" href="{{'https://www.youtube.com/results?search_query=' + data.Title}}">Watch the trailer</a>
                 <a class="youtube__btn" href="#/viewMovie">Show more</a>
@@ -46,12 +65,8 @@
                         <img class="d-block w-100" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="Third slide">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-
-                </a>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"></a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"></a>
             </div>
         </div>
 
@@ -66,6 +81,5 @@
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
     </div>
-
 
 </div> <!-- /container -->

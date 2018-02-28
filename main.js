@@ -19,7 +19,7 @@ movieApp.config(function($routeProvider, $locationProvider) {
     })
     .when('/about', {
       templateUrl: 'views/info.html',
-      controller: 'AboutMovie'
+      controller: 'ViewMovie'
     })
     .otherwise({
       redirectTo: '/home'
