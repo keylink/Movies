@@ -1,12 +1,13 @@
 
-
 movieApp.controller('MovieController', function($scope, $http, $routeParams, httpService) {
 
   $scope.data = JSON.parse(localStorage.getItem('movie'));
   $scope.url = 'https://www.youtube.com/results?search_query=avengers';
 
+
   //Init angular lifecycle for load start data
   $scope.init = function () {
+
     if($scope.data == undefined) {
       httpService.initDataRequest()  // Service http request
         .then(function(response) {
@@ -24,7 +25,6 @@ movieApp.controller('MovieController', function($scope, $http, $routeParams, htt
   $scope.search = function() {
 
     if($scope.searchName) {
-
       httpService.searchMovieRequest($scope.searchName)
         .then(function(response) {
           // success pass data to global variable

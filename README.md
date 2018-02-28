@@ -11,3 +11,4 @@ AngularJS framework [site](www.angularjs.org)
 TODO:
 
   - Read more about AngularJs
+  - Remove # from url router [link to tutorial](https://scotch.io/tutorials/pretty-urls-in-angularjs-removing-the-hashtag#toc-locationprovider-and-html5mode)

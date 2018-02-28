@@ -2,7 +2,7 @@
 var movieApp = angular.module("movieApp", ['ngRoute']);
 
 // Routes
-movieApp.config(function($routeProvider) {
+movieApp.config(function($routeProvider, $locationProvider) {
   $routeProvider
     .when('/home', {
       templateUrl: 'views/main.html',
@@ -24,7 +24,10 @@ movieApp.config(function($routeProvider) {
     .otherwise({
       redirectTo: '/home'
     });
+
 });
+
+
 
 $('.carousel').carousel({
   interval: 2000,
